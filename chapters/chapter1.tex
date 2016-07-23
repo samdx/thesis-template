@@ -48,9 +48,9 @@ There are a multitude of mathematical symbols available for \LaTeX{} and it woul
 You can use this page as a reference or crib sheet, the symbols are rendered as large, high quality images so you can quickly find the \LaTeX{} command for the symbol you need.
 
 \subsection{\LaTeX{} on a Mac}
- 
+
 The \LaTeX{} package is available for many systems including Windows, Linux and Mac OS X. The package for OS X is called MacTeX” and it contains all the applications you need – bundled together and pre-customised – for a fully working \LaTeX{} environment and workﬂow.
- 
+
 MacTeX includes a dedicated \LaTeX{} IDE (Integrated Development Environment) called ``TeXShop'' for writing your `\texttt{.tex}' files and ``BibDesk'': a program to manage your references and create your bibliography section just as easily as managing songs and creating playlists in iTunes. To learn more about using \LaTeX{} on the Mac system, read the guide at:\\
 \href{http://www.sunilpatel.co.uk/texhelp.html}{\texttt{http://www.sunilpatel.co.uk/texhelp.html }}
 
@@ -214,7 +214,7 @@ One of the most important (and most difficult) things to keep track of in such a
 
 \subsection{Printing Format}
 
-This thesis template is designed for single sided printing as most theses are printed and bound this way. This means that the left margin is always wider than the right (for binding). Four out of ﬁve people will now judge the margins by eye and think, ``I never 
+This thesis template is designed for single sided printing as most theses are printed and bound this way. This means that the left margin is always wider than the right (for binding). Four out of ﬁve people will now judge the margins by eye and think, ``I never
 noticed that before.''.
 
 The headers for the pages contain the page number on the right side (so it is easy to flick through to the page you want) and the chapter name on the left side.
@@ -246,7 +246,7 @@ There will hopefully be many figures in your thesis (that should be placed in th
 \begin{verbatim}
 \begin{figure}[htbp]
   \centering
-    \includegraphics{./Figures/Electron.pdf}
+    \includegraphics{./figures/electron.pdf}
     \rule{35em}{0.5pt}
   \caption[An Electron]{An electron (artist's impression).}
   \label{fig:Electron}
@@ -255,11 +255,11 @@ There will hopefully be many figures in your thesis (that should be placed in th
 Also look in the source file. Putting this code into the source file produces the picture of the electron that you can see in the figure below.
 
 \begin{figure}[htbp]
-	\centering
-		\includegraphics{./Figures/Electron.pdf}
-		\rule{35em}{0.5pt}
-	\caption[An Electron]{An electron (artist's impression).}
-	\label{fig:Electron}
+    \centering
+        \includegraphics{./figures/electron.pdf}
+        \rule{35em}{0.5pt}
+    \caption[An Electron]{An electron (artist's impression).}
+    \label{fig:Electron}
 \end{figure}
 
 Sometimes figures don't always appear where you write them in the source. The placement depends on how much space there is on the page for the figure. Sometimes there is not enough room to fit a figure directly where it should go (in relation to the text) and so \LaTeX{} puts it at the top of the next page. Positioning figures is the job of \LaTeX{} and so you should only worry about making them look good!
