@@ -1,10 +1,10 @@
 pdf:
-	pdflatex Thesis.tex
+	pdflatex thesis.tex
 
 glo:
-	makeglossaries Thesis
+	makeglossaries thesis
 
 cleanglo:
-	rm Thesis.{glo,glg,gls}
+	rm thesis.{glo,glg,gls}
 clean:
-	rm Thesis.{log,lol,lot,out,toc,xdy,lof,aux}
+	rm thesis.{log,lol,lot,out,toc,xdy,lof,aux}

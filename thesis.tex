@@ -3,8 +3,8 @@
 %% ---------------------------------------------------------------- 
 
 % Set up the document
-\documentclass[a4paper, 11pt, oneside]{Thesis}  % Use the "Thesis" style, based on the ECS Thesis style by Steve Gunn
-\graphicspath{{Figures/}}  % Location of the graphics files (set up for graphics to be in PDF format)
+\documentclass[a4paper, 11pt, oneside]{thesis}  % Use the "Thesis" style, based on the ECS Thesis style by Steve Gunn
+\graphicspath{{figures/}}  % Location of the graphics files (set up for graphics to be in PDF format)
 
 % Include any extra LaTeX packages required
 \usepackage[square, numbers, comma, sort&compress]{natbib}  % Use the "Natbib" style for the references in the Bibliography
@@ -177,32 +177,32 @@ $\omega$ & angular frequency & rads$^{-1}$ \\
 % Include the chapters of the thesis, as separate files
 % Just uncomment the lines as you write the chapters
 
-\input{./Chapters/Chapter1} % Introduction
+\input{./chapters/chapter1} % Introduction
 
-%\input{./Chapters/Chapter2} % Background Theory 
+%\input{./chapters/chapter2} % Background Theory 
 
-%\input{./Chapters/Chapter3} % Experimental Setup
+%\input{./chapters/chapter3} % Experimental Setup
 
-%\input{./Chapters/Chapter4} % Experiment 1
+%\input{./chapters/chapter4} % Experiment 1
 
-%\input{./Chapters/Chapter5} % Experiment 2
+%\input{./chapters/chapter5} % Experiment 2
 
-%\input{./Chapters/Chapter6} % Results and Discussion
+%\input{./chapters/chapter6} % Results and Discussion
 
-%\input{./Chapters/Chapter7} % Conclusion
+%\input{./chapters/chapter7} % Conclusion
 
 %% ----------------------------------------------------------------
-% Now begin the Appendices, including them as separate files
+% Now begin the appendices, including them as separate files
 
 \addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
 
-\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+\appendix % Cue to tell LaTeX that the following 'chapters' are appendices
 
-\input{./Appendices/AppendixA}	% Appendix Title
+\input{./appendices/appendixA}	% Appendix Title
 
-%\input{./Appendices/AppendixB} % Appendix Title
+%\input{./appendices/appendixB} % Appendix Title
 
-%\input{./Appendices/AppendixC} % Appendix Title
+%\input{./appendices/appendixC} % Appendix Title
 
 \addtocontents{toc}{\vspace{2em}}  % Add a gap in the Contents, for aesthetics
 \backmatter
@@ -215,3 +215,4 @@ $\omega$ & angular frequency & rads$^{-1}$ \\
 
 \end{document}  % The End
 %% ----------------------------------------------------------------
+
