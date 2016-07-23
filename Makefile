@@ -1,5 +1,5 @@
 pdf:
-	pdflatex --shell-escape --output-directory=build Thesis.tex
+	pdflatex Thesis.tex
 
 glo:
 	makeglossaries Thesis
