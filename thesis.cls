@@ -274,6 +274,7 @@
 \addcontentsline{toc}{chapter}{#1}}
 \renewcommand\tableofcontents{
 \btypeout{Table of Contents}
+\addtotoc{Table of Contents}
 \begin{spacing}{1}{
     \setlength{\parskip}{1pt}
     \if@twocolumn
