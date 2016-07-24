@@ -25,6 +25,17 @@
 \LoadClass{\baseclass}
 \newcommand\bhrule{\typeout{------------------------------------------------------------------------------}}
 
+%=============================================================================
+% Display the chaptername in TOC
+% tocloft package is required
+\usepackage[titles]{tocloft}
+% appendix package with title, titletoc options to prevent display chaptername
+% in Appendix sections
+\usepackage[title,titletoc]{appendix}
+% calc for calculating width of pattern
+\usepackage{calc}
+%-----------------------------------------------------------------------------
+
 \newcommand\Declaration[1]{
 \btypeout{Declaration of Authorship}
 \addtotoc{Declaration of Authorship}
@@ -108,7 +119,6 @@
 \setcounter{dbltopnumber}{9}
 \usepackage{graphicx}
 \usepackage{epstopdf}
-\usepackage[scriptsize]{subfigure}
 \usepackage{booktabs}
 \usepackage{rotating}
 \usepackage{listings}
@@ -264,6 +274,7 @@
 \addcontentsline{toc}{chapter}{#1}}
 \renewcommand\tableofcontents{
 \btypeout{Table of Contents}
+\addtotoc{Table of Contents}
 \begin{spacing}{1}{
     \setlength{\parskip}{1pt}
     \if@twocolumn
@@ -279,6 +290,12 @@
    \cleardoublepage
 }\end{spacing}
 }
+%=============================================================================
+% Display the chaptername in TOC
+\renewcommand\chaptername{Chapter}
+\renewcommand\cftchappresnum{\chaptername\space}
+\setlength{\cftchapnumwidth}{\widthof{\textbf{Chapter~999~}}}
+%-----------------------------------------------------------------------------
 \renewcommand\listoffigures{
 \btypeout{List of Figures}
 \addtotoc{List of Figures}
